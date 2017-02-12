@@ -91,7 +91,7 @@ public class ContactListActivity extends AppCompatActivity {
 
         MenuItem geo_item = menu.add("Ver no mapa");
         Intent geo_intent = new Intent(Intent.ACTION_VIEW);
-        geo_intent.setData(Uri.parse("geo:0,0&q=" + contact.getAddress()));
+        geo_intent.setData(Uri.parse("geo:0,0?q=" + contact.getAddress()));
         geo_item.setIntent(geo_intent);
 
         MenuItem website_item = menu.add("Visitar site");
